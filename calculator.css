@@ -1,0 +1,175 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #99C1B9
+}
+
+.calc {
+    width: 280px;
+    background-color: #9E9E9E;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#firstRow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#firstRow > li {
+    display: inline-block;
+    width: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#secondRow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#secondRow > li {
+    display: inline-block;
+    width: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#thirdRow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#thirdRow > li {
+    display: inline-block;
+    width: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#fourthRow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#fourthRow > li {
+    display: inline-block;
+    width: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#fifthRow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#fifthRow > li {
+    display: inline-block;
+    width: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#screen {
+    color: white;
+    font-size: 60px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#null {
+    width: 130px!important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    background-color: #EEEEEE;
+}
+
+#ac, #plusMinus, #percent {
+    background-color: #99C1B9;
+    float: left;
+    color: white;
+
+}
+
+#division, #multiplication, #subtraction, #sum, #equal {
+    background-color:#3F4531;
+    float: left;
+    color: white;
+}
+
+#dot, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    float: left;
+    background-color: #EEEEEE;
+} 
+
+.bgHover:hover {
+    background-color: rgba(153, 193, 185, .6)!important;
+}
+
+.bgHoverOperator:hover {
+    background-color: rgba(63, 69, 49, .6)!important;
+}
+
+.bgHoverNumber:hover {
+    background-color: rgba(238, 238, 238, .6)!important;
+}
+
+.colorOnClick {
+    background-color: #3F4531;
+}
+
+.colorOnClickActive {
+    background-color: #748059!important;
+}
+
