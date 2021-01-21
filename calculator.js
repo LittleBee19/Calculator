@@ -131,7 +131,7 @@ document.getElementById("dot").onclick = function() {
     }
     acToC();
 }
-document.getElementById("sum").onclick = function () {
+document.getElementById("sum").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     x = currentNumbers;
     operator = "+";
@@ -139,7 +139,7 @@ document.getElementById("sum").onclick = function () {
     // doda razlicno ozadje
     document.getElementById("sum").classList.add("colorOnClickActive");
 }
-document.getElementById("subtraction").onclick = function () {
+document.getElementById("subtraction").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     x = currentNumbers;
     operator = "-";
@@ -147,7 +147,7 @@ document.getElementById("subtraction").onclick = function () {
      // doda razlicno ozadje
      document.getElementById("subtraction").classList.add("colorOnClickActive");
 }
-document.getElementById("multiplication").onclick = function () {
+document.getElementById("multiplication").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     x = currentNumbers;
     operator = "*";
@@ -155,7 +155,7 @@ document.getElementById("multiplication").onclick = function () {
      // doda razlicno ozadje
      document.getElementById("multiplication").classList.add("colorOnClickActive");
 }
-document.getElementById("division").onclick = function () {
+document.getElementById("division").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     x = currentNumbers;
     operator = "/";
@@ -163,18 +163,24 @@ document.getElementById("division").onclick = function () {
      // doda razlicno ozadje
      document.getElementById("division").classList.add("colorOnClickActive");
 }
-document.getElementById("equal").onclick = function () {
+document.getElementById("equal").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     y = currentNumbers;
     document.getElementById("screen").innerHTML = 0;
     // parseInt - spremeni iz stringa v stevilko parseFloat uposteva decimalke
     let result = operation(parseFloat(x),parseFloat(y),operator);
     printToScreen(result);
+    
 }
-document.getElementById("plusMinus").onclick = function () {
+document.getElementById("plusMinus").onclick = function() {
     // mnozi z -1, da dobi s klikom na +/- pravi predznak
     let currentNumbers = document.getElementById("screen").innerHTML;
     let x = parseFloat(currentNumbers) * -1;
+    document.getElementById("screen").innerHTML = x;
+}
+document.getElementById("percent").onclick = function() {
+    let currentNumbers = document.getElementById("screen").innerHTML;
+    let x = parseFloat(currentNumbers) / 100;
     document.getElementById("screen").innerHTML = x;
 }
 
