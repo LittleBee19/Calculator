@@ -126,7 +126,8 @@ document.getElementById("dot").onclick = function() {
     let screen = document.getElementById("screen").innerHTML;
     let dot = "."
     if(screen.indexOf(dot) == -1) {
-        printToScreen(dot);
+        // piko doda temu kar je ze izpisano na ekranu
+        document.getElementById("screen").innerHTML = screen + dot;
     }
     acToC();
 }
