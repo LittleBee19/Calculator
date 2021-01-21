@@ -125,12 +125,9 @@ document.getElementById("ac").onclick = function() {
 document.getElementById("dot").onclick = function() {
     let screen = document.getElementById("screen").innerHTML;
     let dot = "."
-    if(screen.indexOf(dot) > -1) {
-        alert("je pika");
-    } else {
-        alert("ni pike")
+    if(screen.indexOf(dot) == -1) {
+        printToScreen(dot);
     }
-    printToScreen(".");
     acToC();
 }
 document.getElementById("sum").onclick = function () {
