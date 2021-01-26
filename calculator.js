@@ -136,12 +136,14 @@ document.getElementById("dot").onclick = function() {
         document.getElementById("screen").innerHTML = screen + dot;
     }
     acToC();
+    resetBgColor();
 }
 document.getElementById("sum").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     x = currentNumbers;
     operator = "+";
     document.getElementById("screen").innerHTML = 0;
+    resetBgColor();
     // doda razlicno ozadje
     document.getElementById("sum").classList.add("colorOnClickActive");
 }
@@ -150,6 +152,7 @@ document.getElementById("subtraction").onclick = function() {
     x = currentNumbers;
     operator = "-";
     document.getElementById("screen").innerHTML = 0;
+    resetBgColor();
      // doda razlicno ozadje
      document.getElementById("subtraction").classList.add("colorOnClickActive");
 }
@@ -158,6 +161,7 @@ document.getElementById("multiplication").onclick = function() {
     x = currentNumbers;
     operator = "*";
     document.getElementById("screen").innerHTML = 0;
+    resetBgColor();
      // doda razlicno ozadje
      document.getElementById("multiplication").classList.add("colorOnClickActive");
 }
@@ -166,6 +170,7 @@ document.getElementById("division").onclick = function() {
     x = currentNumbers;
     operator = "/";
     document.getElementById("screen").innerHTML = 0;
+    resetBgColor();
      // doda razlicno ozadje
      document.getElementById("division").classList.add("colorOnClickActive");
 }
@@ -177,17 +182,20 @@ document.getElementById("equal").onclick = function() {
     let result = operation(parseFloat(x),parseFloat(y),operator);
     printToScreen(result);
     equal = true;
+    resetBgColor();
 }
 document.getElementById("plusMinus").onclick = function() {
     // mnozi z -1, da dobi s klikom na +/- pravi predznak
     let currentNumbers = document.getElementById("screen").innerHTML;
     let x = parseFloat(currentNumbers) * -1;
     document.getElementById("screen").innerHTML = x;
+    resetBgColor();
 }
 document.getElementById("percent").onclick = function() {
     let currentNumbers = document.getElementById("screen").innerHTML;
     let x = parseFloat(currentNumbers) / 100;
     document.getElementById("screen").innerHTML = x;
+    resetBgColor();
 }
 
 
