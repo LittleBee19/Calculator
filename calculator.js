@@ -5,6 +5,7 @@ document.getElementById("screen").innerHTML = "0";
 let x = 0;
 let y = 0;
 let operator = "";
+let equal = false;
 
 // Klik na gumb spremeni tekst na ekranu
 function printToScreen(number) {
@@ -24,7 +25,12 @@ function printToScreen(number) {
         document.getElementById("screen").style.fontSize = "40px";
     } else {
         document.getElementById("screen").style.fontSize = "60px";
-    }  
+    }
+    //preveri kaj doda po equal
+    if(equal == true) {
+        document.getElementById("screen").innerHTML = number;
+        equal = false;
+    }
 }
 
 // funkcija, ki izvaja operacije
@@ -170,7 +176,7 @@ document.getElementById("equal").onclick = function() {
     // parseInt - spremeni iz stringa v stevilko parseFloat uposteva decimalke
     let result = operation(parseFloat(x),parseFloat(y),operator);
     printToScreen(result);
-    
+    equal = true;
 }
 document.getElementById("plusMinus").onclick = function() {
     // mnozi z -1, da dobi s klikom na +/- pravi predznak
@@ -183,5 +189,7 @@ document.getElementById("percent").onclick = function() {
     let x = parseFloat(currentNumbers) / 100;
     document.getElementById("screen").innerHTML = x;
 }
+
+
 
 
